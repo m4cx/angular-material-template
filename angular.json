@@ -93,7 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/material-icons-font/material-icons-font.css",
+              "node_modules/material-icons-font/material-icons-font.csss",
               "node_modules/roboto-fontface/css/roboto/sass/roboto-fontface-regular.scss",
               "src/styles.scss"
             ],
