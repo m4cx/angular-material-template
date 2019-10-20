@@ -1,23 +1,24 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <button mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon >menu</mat-icon>
-    </button>
-    <h1>Application</h1>
-    <span class="menu-spacer"></span>
-    <div>
-    </div>
-  </mat-toolbar-row>
-</mat-toolbar>
-
 <mat-sidenav-container>
-  <mat-sidenav #sidenav>
+  <mat-sidenav #sidenav mode="push">
+    <button mat-icon-button class="close-nav" (click)="sidenav.toggle()">
+      <mat-icon>close</mat-icon>
+    </button>
     <mat-nav-list>
-      <a mat-list-item (click)="sidenav.toggle()" mat-list-item><mat-icon>close</mat-icon></a>
+      <a mat-list-item>Menu Item 1</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div style="height: 88vh;">
+    <div>
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <h1>Application</h1>
+          <span class="menu-spacer"></span>
+          <div></div>
+        </mat-toolbar-row>
+      </mat-toolbar>
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>
