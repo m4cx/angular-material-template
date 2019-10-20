@@ -1,0 +1,28 @@
+:host {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-toolbar {
+  flex: 0 0 auto;
+}
+
+mat-sidenav-container {
+  flex: 1 1 auto;
+}
+
+mat-nav-list {
+  margin-top: 3rem;
+}
+
+mat-sidenav {
+  min-width: 25rem;
+}
+
+.close-nav {
+  position: absolute;
+  top: 0.5rem;
+  left: 22.5rem;
+  z-index: 10;
+}
